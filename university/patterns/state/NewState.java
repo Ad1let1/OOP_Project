@@ -11,7 +11,6 @@ public class NewState implements State {
 
     @Override
     public void handleRequest(TechSupportRequest request) {
-        // Enforces valid state transition from New to Viewed
         request.setState(new ViewedState());
     }
 
