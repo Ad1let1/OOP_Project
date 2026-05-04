@@ -11,12 +11,10 @@ public class Manager extends Employee {
     public ManagerType managerType;
 
     public void assignCourse(Course course, Teacher teacher) {
-        // HashSet prevents duplicates efficiently when assigning teachers to a course
         course.instructors.add(teacher);
     }
 
     public void approveRegistration(Student student, Course course) {
-        // Adds course to student's registered courses, leveraging fast lookups of HashSet
         student.courses.add(course);
     }
 
