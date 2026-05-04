@@ -10,7 +10,6 @@ public class Employee extends User {
     public double salary;
     public Date hireDate;
     public void sendRequest(TechSupportRequest request, TechSupportSpecialist support) {
-        // Sends request directly to the support specialist.
         support.receiveRequest(request);
     }
     public void sendMessage(User user, String msg) {
