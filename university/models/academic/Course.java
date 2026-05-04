@@ -11,22 +11,11 @@ public class Course {
     public Course() {
 
     }
-
-    public int courseId;
-
+    public int courseId, credits, targetYear;
     public String courseName;
-
-    public int credits;
-
     public CourseType courseType;
-
     public Language language;
-
     public Set<Teacher> instructors = new HashSet<>();
-
     public Set<Lesson> lessons = new HashSet<>();
-
-    public int targetYear;
-
 
 }
