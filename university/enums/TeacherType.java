@@ -1,10 +1,5 @@
 package university.enums;
 
-
-
-/**
- * 
- */
 public enum TeacherType {
     TUTOR,
     LECTOR,

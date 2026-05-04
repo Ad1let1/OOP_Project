@@ -1,7 +1,6 @@
 package university.models.users;
 
-
-import university.interfaces.Serializable;
+import java.io.Serializable;
 
 public class User implements Serializable {
 
@@ -12,18 +11,20 @@ public class User implements Serializable {
 
     public User() {
     }
+
     public void login(String username, String password) {
-        if(this.username.equals(username) && this.password.equals(password)) {
+        if (this.username.equals(username) && this.password.equals(password)) {
             this.isLoggedIn = true;
         } else {
             throw new IllegalArgumentException("Invalid credentials");
         }
     }
+
     public void logout() {
         this.isLoggedIn = false;
     }
+
     public void update(String newPassword) {
         this.password = newPassword;
     }
-
 }

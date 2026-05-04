@@ -5,10 +5,10 @@ import university.models.academic.Course;
 
 public class Manager extends Employee {
 
+    public ManagerType managerType;
+
     public Manager() {
     }
-
-    public ManagerType managerType;
 
     public void assignCourse(Course course, Teacher teacher) {
         course.instructors.add(teacher);
@@ -17,5 +17,4 @@ public class Manager extends Employee {
     public void approveRegistration(Student student, Course course) {
         student.courses.add(course);
     }
-
 }

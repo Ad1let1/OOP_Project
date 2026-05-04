@@ -1,17 +1,21 @@
 package university.models.research;
+
 import university.models.users.User;
-import university.models.research.Journal
-import java.util.*;
+
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ResearchPaper {
 
-    public ResearchPaper() {
-    }
-
-    public int pages, citations, doi;
+    public int pages;
+    public int citations;
+    public int doi;
     public String title;
     public Set<User> authors = new HashSet<>();
     public Journal journal;
     public Date publishedDate;
 
+    public ResearchPaper() {
+    }
 }

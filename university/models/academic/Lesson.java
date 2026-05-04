@@ -1,17 +1,13 @@
 package university.models.academic;
 
-
-
-import java.io.*;
-import java.util.*;
+import java.util.Date;
 
 public class Lesson {
-
-    public Lesson() {
-    }
 
     public int id;
     public Date startTime;
     public int duration;
 
+    public Lesson() {
+    }
 }

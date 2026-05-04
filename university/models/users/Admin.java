@@ -1,8 +1,5 @@
 package university.models.users;
 
-import java.io.*;
-import java.util.*;
-
 public class Admin extends Employee {
 
     public Admin() {
@@ -13,5 +10,4 @@ public class Admin extends Employee {
 
     public void viewLogs() {
     }
-
 }
