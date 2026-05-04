@@ -11,7 +11,6 @@ public class AcceptedState implements State {
 
     @Override
     public void handleRequest(TechSupportRequest request) {
-        // Enforces transition from Accepted to Done once work is completed
         request.setState(new DoneState());
     }
 
